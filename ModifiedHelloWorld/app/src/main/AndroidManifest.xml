@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.uwyo.pdaniel3.modifiedhelloworld" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".HelloWorld"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="edu.uwyo.pdaniel3.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="edu.uwyo.pdaniel3.modifiedhelloworld.HelloWorld" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.uwyo.pdaniel3.modifiedhelloworld.HelloWorld" />
+        </activity>
+    </application>
+
+</manifest>

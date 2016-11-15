@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Total bill : $"
+            android:id="@+id/totalBillTv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_message"
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:hint="@string/edit_message"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tip % :"
+            android:id="@+id/tipTv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_message2"
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:hint="@string/edit_message2"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Split "
+            android:id="@+id/splitTv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_message3"
+            android:text="1"
+            android:layout_marginLeft="9dp"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff"
+            android:hint="@string/edit_message3"
+            android:inputType="numberSigned" />
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_text" />
+
+        <RadioButton
+            android:id="@+id/radioButton_id2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_text2" />
+
+        <RadioButton
+            android:id="@+id/radioButton_id3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radioButton_text3"
+            android:checked="true"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/totalTv"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:text="@string/button_get_total"
+            android:onClick="sendMessage" />
+
+    </LinearLayout>
+
+</LinearLayout>

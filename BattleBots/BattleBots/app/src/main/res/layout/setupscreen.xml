@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+
+
+        <TextView
+            android:id="@+id/battleBotSetupInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/setupInstructions"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+
+
+            <TextView
+                android:id="@+id/armorPickerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".33"
+                android:text="@string/armorPickerText"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+            <TextView
+                android:id="@+id/powerPickerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight=".33"
+                android:text="@string/powerPickerText"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+            <TextView
+                android:id="@+id/scanPickerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight=".33"
+                android:text="@string/scanPickerText"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pickers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+            <EditText
+                android:id="@+id/armorPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/powerPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/scanPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.33"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inc_dec_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/decArmorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/incArmorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/decPowerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/incPowerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/plus" />
+
+            <Button
+                android:id="@+id/decScanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/incScanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/plus" />
+
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/serverAddressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/serverAddressText"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <EditText
+            android:id="@+id/serverAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <requestFocus />
+        </EditText>
+
+
+        <LinearLayout
+            android:id="@+id/setupButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+
+
+
+
+            <Button
+                android:id="@+id/connectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".66"
+                android:text="@string/connectButtonText" />
+
+
+
+
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".33"
+                android:text="@string/cancelButtonText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

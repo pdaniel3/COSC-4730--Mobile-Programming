@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25" >
+
+            <TextView
+                android:id="@+id/currentHPText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/currentHPText"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/currentHP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".45"
+                android:text="@string/currentHP"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <Button
+                android:id="@+id/scanButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight=".25"
+                android:text="@string/scanButton" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25" >
+
+            <TableLayout
+                android:id="@+id/TableLayout01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".5" >
+
+                <TableRow
+                    android:id="@+id/TableRow02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp">
+
+                        <Button
+                            android:id="@+id/moveUpLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up_left" />
+
+                        <Button
+                            android:id="@+id/moveUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up" />
+
+                        <Button
+                            android:id="@+id/moveUpRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up_right" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp" >
+
+                        <Button
+                            android:id="@+id/moveLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/left" />
+
+                        <Button
+                            android:id="@+id/moveBlank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/middle" />
+
+                        <Button
+                            android:id="@+id/moveRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/right" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp">
+
+                        <Button
+                            android:id="@+id/moveDownLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down_left" />
+
+                        <Button
+                            android:id="@+id/moveDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down" />
+
+                        <Button
+                            android:id="@+id/moveDownRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down_right" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/TableLayout02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight=".25" >
+
+                <TableRow
+                    android:id="@+id/TableRow04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/shotUpLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up_left" />
+
+                        <Button
+                            android:id="@+id/shotUp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up" />
+
+                        <Button
+                            android:id="@+id/shotUpRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/up_right" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/shotLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/left" />
+
+                        <Button
+                            android:id="@+id/shotBlank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/middle" />
+
+                        <Button
+                            android:id="@+id/shotRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/right" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/TableRow06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <Button
+                            android:id="@+id/shotDownLeft"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down_left" />
+
+                        <Button
+                            android:id="@+id/shotDown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down" />
+
+                        <Button
+                            android:id="@+id/shotDownRight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/down_right" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

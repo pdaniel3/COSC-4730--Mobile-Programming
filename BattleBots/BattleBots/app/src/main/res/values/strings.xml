@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Battle Bots</string>
+    <string name="setupInstructions">Assign points to your bot. There are 5 extra points. Cheating will not work.</string>
+    <string name="armorPickerText">Armor</string>
+    <string name="powerPickerText">Power</string>
+    <string name="scanPickerText">Scan Power</string>
+    <string name="startButton">Connect to Server</string>
+    <string name="quitButton">Quit</string>
+    <string name="serverAddressText">Enter Server Address</string>
+    <string name="connectButtonText">Connect</string>
+    <string name="cancelButtonText">Cancel</string>
+    <string name="errorMessageText">Error</string>
+    <string name="errorMessageButtonText">Ok</string>
+    <string name="controllerMovementText">Move</string>
+    <string name="controllerShootingText">Shoot</string>
+    <string name="currentHPText">HP: </string>
+    <string name="currentHP">Unknown</string>
+    <string name="scanButton">Scan</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
